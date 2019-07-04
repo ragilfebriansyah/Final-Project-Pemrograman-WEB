@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas Akhir Pemrograman WEB</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script language="javascript" src="js/javascript.js"></script>
+
+
+</head>
+<body>
+	<header>
+		<div class="container">
+		<div id="branding">
+			<h1>Pemrograman WEB</h1>
+		</div>
+		<nav>
+			<ul>
+				<li class="active"><a href="home.html">Home</a></li>
+				<li> <a href="biodata.html"><b>About</a></li></b>
+				<li> <a href="https://www.instagram.com/ragilfebriansyah/?hl=id"><b>Contac</a></li></b>
+				<li> <a href="materi.html"><b>Wawasan</a></li></b>
+				<li> <a href="index.html"><b>Pendaftaran</a></li></b>
+				<li><a href="daftar_tamu.php"><b>Data Tamu</a></li></b>
+				
+			</ul>
+		</nav>
+	</div>
+</b>
+	</header>
+
+
+<div class="menu2">
+	<!--menu2 disini di gunakan untuk mengatur form pendaftaran agar terlihat rapih-->
+	<form method="post" action="proses.php">
+		<!--disini form akan di kirim ke proses.php untuk di proses dan menjadikan data yang seutuhnya-->
+		<h2><b>FORM PENDAFTARAN PHOTOGRAPHI</b></h2>
+		<h4>Silahkan mengisi form sesuai dengan KTP :</h4>
+	<form method="post" action="proses.php">
+		<center>
+	<table>
+		<!--disini saya banyak menggunakan type text karena banyak text yang di masukkan secara dinamis-->
+		<tr>
+			<td><font color="black">Nama</font></td><td>&nbsp:&nbsp&nbsp&nbsp</td>
+			<td><input type="text" name="nama" required="required"></td>
+		</tr>
+		<tr>
+			<td><font color="black">Tanggal Lahir</font></td><td>&nbsp:</td>
+			<td><input type="date" name="tanggal" required="required"></td>
+		</tr>
+		<tr>
+			<td><font color="black">Jenis Kelamin</font></td><td>&nbsp:</td>
+			<td><font color="black"><input type="radio" name="jk" value="Laki-Laki" checked />Laki-Laki
+			<input type="radio" name="jk" value="Perempuan">Perempuan</td>
+		</tr>
+		<tr>
+			<td><font color="black">Alamat</font></td><td>&nbsp:</td>
+			<td><textarea name="alamat" required="required"></textarea></td>
+		</tr>
+		<tr>
+			<td><font color ="black">Agama</font></td><td>&nbsp:</td>
+			<td>
+			<select name="agama">
+				<option value="Islam">Islam</option>
+				<option value="Kristen">Kristen</option>
+				<option value="Hindu">Hindu</option>
+				<option value="Budha">Budha</option>
+				<option value="Protestan">Protestan</option>
+			</select>	
+			</td>
+		</tr>
+		<tr>
+			<td></td><td></td>
+			<td><input type="submit" name="kirim" value="submit"></td>
+			<!--disini submit akan mengirimkan data ke proses.php dan akan di lanjutkan ke daftar_tamu.php-->
+		</tr>
+	</table>
+</form>
+</div>
+</center>
+
+<section id="newsletter">
+	<div class="container">
+		<h1>PENCARIAN</h1>
+		<form name="formcari" onSubmit="cari()">
+  	<input class="search" name="keyword" type="text" placeholder="Cari..." required>	
+  	<input class="button" type="submit" value="Cari">		
+	</form>
+	
+</section>
+
+<section id="boxes">
+	<div class="container">
+		<div class="box">
+			<img src="img/logo 1.jpg">
+			<h3>PHOTOGRAPHI</h3>
+			<p>
+				Photographi adalah sebuah hoby yang banyak di tekuni di kalangan masyarakat, dengan photographi kita bisa banyak mendapatkan ilmu yang bermanfaat. Tak kalah juga photographi juga bisa menghasilkan uang. Contohnya adalah dengan bekerja sebagai jasa Photographi, membuka stand photographi, dan masih banyak lagi.
+		</p>
+		</div>
+
+		<div class="box">
+			<img src="img/logo 2.png">
+			<h3>PHOTOSHOP</h3>
+			<p>
+				Photoshop, adalah perangkat lunak editor citra buatan Adobe Systems yang dikhususkan untuk pengeditan foto/gambar dan pembuatan efek. Perangkat lunak ini banyak digunakan oleh fotografer digital dan perusahaan iklan sehingga dianggap sebagai pemimpin pasar (market leader) untuk perangkat lunak pengolah gambar/foto, dan, bersama Adobe Acrobat, dianggap sebagai produk terbaik yang pernah diproduksi oleh Adobe Systems.
+		</p>
+	</div>
+
+	<div class="box">
+			<img src="img/logo 3.png">
+			<h3>ADOBE PREMIER PRO</h3>
+			<p>
+				Premiere Pro adalah sebuah program penyunting video berbasis non-linier dari Adobe Systems. Itu adalah salah satu produk software dari Adobe Creative Suite, tetapi juga bisa dibeli sendirian. Bahkan kalau dibeli sendirian, itu termasuk Adobe Encore dan Adobe OnLocation.
+		</p>
+	</div>
+</div>
+</section>
+<div class="jam-digital-malasngoding">
+	<div class="kotak">
+		<p id="jam"></p>
+	</div>
+	<div class="kotak">
+		<p id="menit"></p>
+	</div>
+	<div class="kotak">
+		<p id="detik"></p>
+	</div>
+</div>
+<center><h3>SEKARANG JAM</h3></center>
+<script>
+	window.setTimeout("waktu()", 1000);
+
+	function waktu() {
+		var waktu = new Date();
+		setTimeout("waktu()", 1000);
+		document.getElementById("jam").innerHTML = waktu.getHours();
+		document.getElementById("menit").innerHTML = waktu.getMinutes();
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+	}
+</script>
+
+<footer>
+	<p>
+		Ragil Febriansyah_1800018019_Kelas A
+	</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas Akhir Pemrograman WEB</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script language="javascript" src="js/javascript.js"></script>
+	<form action="proses.php" method="post"></form>
+	<form action="daftar_tamu.php" method="post"></form>
+</head>
+<body>
+	<header>
+		<div class="container">
+		<div id="branding">
+			<h1>Pemrograman WEB</h1>
+		</div>
+		<nav>
+			<ul>
+				<li class="active"><a href="home.html">Home</a></li>
+				<li> <a href="biodata.html"><b>About</a></li></b>
+				<li> <a href="https://www.instagram.com/ragilfebriansyah/?hl=id"><b>Contac</a></li></b>
+				<li> <a href="materi.html"><b>Wawasan</a></li></b>
+				<li> <a href="index.html"><b>Pendaftaran</a></li></b>
+				<li><a href="daftar_tamu.php"><b>Data Tamu</a></li></b>
+				
+			</ul>
+		</nav>
+	</b>
+	</div>
+	</header>
+
+<section id="showcase">
+	<div class="container">
+		<!--showcase disini di gunakan untuk css di bagian dasar dasar photographi-->
+		<h1>DASAR-DASAR PHOTOGRAPHI</h1>
+		<p>
+			Fotografer menetapkan aperture dan kecepatan rana
+			Fotografer menetapkan aperture dan kecepatan rana. Terlebih dulu, tetapkan nilai untuk salah satunya. Kemudian, gunakan indikator level pencahayaan di viewfinder untuk membantu Anda menetapkan nilai untuk yang lainnya.<br>
+			Cek indikator level pencahayaan untuk mengoreksinya
+			Untuk mengecek pencahayaan yang tepat, manfaatkan indikator level pencahayaan di viewfinder (atau tampilkan di layar LCD). Anda bisa menyesuaikan ke arah positif (+) untuk pencahayaan yang lebih cerah, dan ke arah negatif (-) untuk pencahayaan yang lebih gelap. Menetapkan level pada '0' memberi Anda pencahayaan yang tepat.<br>
+			Saran: Gunakan kecepatan ISO tetap 
+			Apabila memotret dalam mode Manual exposure (Pencahayaan manual), Anda dianjurkan untuk menggunakan kecepatan ISO tetap. Dewasa ini, kamera baru cenderung memiliki 'ISO Auto' sebagai pengaturan ISO default, tetapi jika Anda menggunakan itu apabila melakukan pencahayaan manual, hal ini mungkin meniadakan efek yang Anda ingin capai dengan pengaturan aperture dan kecepatan rana manual. Pertama, tetapkan dulu ISO 100, dan jika pengaturan aperture dan kecepatan rana yang sudah Anda tetapkan tidak berhasil dengan baik, tala secara halus kecepatan ISO lebih jauh sampai Anda menemukan sesuatu yang bekerja dengan baik.<br>
+		</p>
+	</div>
+</section>
+
+<section id="newsletter">
+	<div class="container">
+		<h1>PENCARIAN</h1>
+		<form name="formcari" onSubmit="cari()">
+  	<input class="search" name="keyword" type="text" placeholder="Cari..." required>	
+  	<input class="button" type="submit" value="Cari">		
+	</form>
+	
+</section>
+
+<section id="boxes">
+	<div class="container">
+		<div class="box">
+			<img src="img/logo 1.jpg">
+			<h3>PHOTOGRAPHI</h3>
+			<p>
+				Photographi adalah sebuah hoby yang banyak di tekuni di kalangan masyarakat, dengan photographi kita bisa banyak mendapatkan ilmu yang bermanfaat. Tak kalah juga photographi juga bisa menghasilkan uang. Contohnya adalah dengan bekerja sebagai jasa Photographi, membuka stand photographi, dan masih banyak lagi.
+		</p>
+		</div>
+
+		<div class="box">
+			<img src="img/logo 2.png">
+			<h3>PHOTOSHOP</h3>
+			<p>
+				Photoshop, adalah perangkat lunak editor citra buatan Adobe Systems yang dikhususkan untuk pengeditan foto/gambar dan pembuatan efek. Perangkat lunak ini banyak digunakan oleh fotografer digital dan perusahaan iklan sehingga dianggap sebagai pemimpin pasar (market leader) untuk perangkat lunak pengolah gambar/foto, dan, bersama Adobe Acrobat, dianggap sebagai produk terbaik yang pernah diproduksi oleh Adobe Systems.
+		</p>
+	</div>
+
+	<div class="box">
+			<img src="img/logo 3.png">
+			<h3>ADOBE PREMIER PRO</h3>
+			<p>
+				Premiere Pro adalah sebuah program penyunting video berbasis non-linier dari Adobe Systems. Itu adalah salah satu produk software dari Adobe Creative Suite, tetapi juga bisa dibeli sendirian. Bahkan kalau dibeli sendirian, itu termasuk Adobe Encore dan Adobe OnLocation.
+		</p>
+	</div>
+</div>
+</section>
+<div class="jam-digital-malasngoding">
+	<div class="kotak">
+		<p id="jam"></p>
+	</div>
+	<div class="kotak">
+		<p id="menit"></p>
+	</div>
+	<div class="kotak">
+		<p id="detik"></p>
+	</div>
+</div>
+<center><h3>SEKARANG JAM</h3></center>
+<script>
+	window.setTimeout("waktu()", 1000);
+
+	function waktu() {
+		var waktu = new Date();
+		setTimeout("waktu()", 1000);
+		document.getElementById("jam").innerHTML = waktu.getHours();
+		document.getElementById("menit").innerHTML = waktu.getMinutes();
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+	}
+</script>
+
+<footer>
+	<p>
+		Ragil Febriansyah_1800018019_Kelas A
+	</p>
+</footer>
+
+</body>
+</html>

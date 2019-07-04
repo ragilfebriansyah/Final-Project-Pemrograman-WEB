@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas Akhir Pemrograman WEB</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script language="javascript" src="js/javascript.js"></script>
+	<form action="proses.php" method="post"></form>
+	<form action="daftar_tamu.php" method="post"></form>
+</head>
+<body>
+	<header>
+		<div class="container">
+		<div id="branding">
+			<h1>Pemrograman WEB</h1>
+		</div>
+		<nav>
+			<ul>
+				<li class="active"><a href="home.html">Home</a></li>
+				<li> <a href="biodata.html"><b>About</a></li></b>
+				<li> <a href="https://www.instagram.com/ragilfebriansyah/?hl=id"><b>Contac</a></li></b>
+				<li> <a href="materi.html"><b>Wawasan</a></li></b>
+				<li> <a href="index.html"><b>Pendaftaran</a></li></b>
+				<li><a href="daftar_tamu.php"><b>Data Tamu</a></li></b>
+	
+			</ul>
+		</nav>
+	</b>
+	</div>
+	</header>
+
+<section id="showcase1">
+	<!--showcase1 digunakan untuk nama besar css yang mana meliputi css di bawahnya, agar tidak bingung untuk mengaturnya, karena di css ini banyak sekali css yang saya masukkan-->
+	<div class="container">
+
+		<!--container di sini digunakan untuk mengedit halaman biodata agar terlihat rapih-->
+		<center><h1>BIODATA</h1></center>
+		<img src="img/ragil.jpeg" border="2" align="left" width="300px" height ="400px"/></a>
+		<pre><p>	 Nama		: RAGIL FEBRIANSYAH </p></pre>
+		<pre><p>	 TTL		: Bengkulu, 23 Februari 2000</p></pre>
+		<pre><p>	 Alamat		: Jl. Lintas Pagar Alam, Desa Imigrasi Permu, Kec Kepahiang,<br> 
+			  Kab Kepahiang, Provinsi Bengkulu</p></pre>
+		<pre><p>	 Fakultas	: Teknologi Industri</p></pre>
+		<pre><p>	 Prodi		: Teknik Informatika</p></pre>
+		<pre><p>	 Email		: ragilfebriansyah2302@gmail.com</p></pre>
+		<pre><p>	 Hobby		: Photography</p></pre>
+		<pre><p>	 Cita-Cita 	: Manager Perusahaan </p></pre>
+		<pre><p>	 Motto 		: Jangan Pernah Menyianyiakan Orang Yang Sudah Percaya Kepada Kita</p></pre>
+	</div>
+</section>
+
+<section id="newsletter">
+	<div class="container">
+		<h1>PENCARIAN</h1>
+		<form name="formcari" onSubmit="cari()">
+  	<input class="search" name="keyword" type="text" placeholder="Cari..." required>	
+  	<input class="button" type="submit" value="Cari">		
+	</form>
+	
+</section>
+
+<section id="boxes">
+	<div class="container">
+		<div class="box">
+			<img src="img/logo 1.jpg">
+			<h3>PHOTOGRAPHI</h3>
+			<p>
+				Photographi adalah sebuah hoby yang banyak di tekuni di kalangan masyarakat, dengan photographi kita bisa banyak mendapatkan ilmu yang bermanfaat. Tak kalah juga photographi juga bisa menghasilkan uang. Contohnya adalah dengan bekerja sebagai jasa Photographi, membuka stand photographi, dan masih banyak lagi.
+		</p>
+		</div>
+
+		<div class="box">
+			<img src="img/logo 2.png">
+			<h3>PHOTOSHOP</h3>
+			<p>
+				Photoshop, adalah perangkat lunak editor citra buatan Adobe Systems yang dikhususkan untuk pengeditan foto/gambar dan pembuatan efek. Perangkat lunak ini banyak digunakan oleh fotografer digital dan perusahaan iklan sehingga dianggap sebagai pemimpin pasar (market leader) untuk perangkat lunak pengolah gambar/foto, dan, bersama Adobe Acrobat, dianggap sebagai produk terbaik yang pernah diproduksi oleh Adobe Systems.
+		</p>
+	</div>
+
+	<div class="box">
+			<img src="img/logo 3.png">
+			<h3>ADOBE PREMIER PRO</h3>
+			<p>
+				Premiere Pro adalah sebuah program penyunting video berbasis non-linier dari Adobe Systems. Itu adalah salah satu produk software dari Adobe Creative Suite, tetapi juga bisa dibeli sendirian. Bahkan kalau dibeli sendirian, itu termasuk Adobe Encore dan Adobe OnLocation.
+		</p>
+	</div>
+</div>
+</section>
+<div class="jam-digital-malasngoding">
+	<div class="kotak">
+		<p id="jam"></p>
+	</div>
+	<div class="kotak">
+		<p id="menit"></p>
+	</div>
+	<div class="kotak">
+		<p id="detik"></p>
+	</div>
+</div>
+<center><h3>SEKARANG JAM</h3></center>
+<script>
+	window.setTimeout("waktu()", 1000);
+
+	function waktu() {
+		var waktu = new Date();
+		setTimeout("waktu()", 1000);
+		document.getElementById("jam").innerHTML = waktu.getHours();
+		document.getElementById("menit").innerHTML = waktu.getMinutes();
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+	}
+</script>
+
+<footer>
+	<p>
+		Ragil Febriansyah_1800018019_Kelas A
+	</p>
+</footer>
+
+</body>
+</html>
